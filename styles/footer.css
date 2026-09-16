@@ -24,6 +24,19 @@
     margin: 0;
 }
 
+.section__tertiary__title {
+    font-family: var(--fontSecondary);
+    color: var(--colorDarkPrimary);
+    font-weight: var(--fontRegular);
+    font-size: 28px;
+}
+
+.section__tertiary__content__span {
+    color: var(--colorTertiary);
+    font-size: 12px;
+    opacity: .75;
+}
+
 .footer__content__list__title {
     color: var(--colorPrimary);
     font-size: 14px;
