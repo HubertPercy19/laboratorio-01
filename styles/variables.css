@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "DM Sans";
+    src:
+        url('../assets/fonts/DMSans-Regular.woff2') format('woff2'),
+        url('../assets/fonts/DMSans-Regular.woff') format('woff'),
+        url('../assets/fonts/DMSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src:
+        url('../assets/fonts/DMSans-Medium.woff2') format('woff2'),
+        url('../assets/fonts/DMSans-Medium.woff') format('woff'),
+        url('../assets/fonts/DMSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src:
+        url('../assets/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('../assets/fonts/PlayfairDisplay-Regular.woff') format('woff'),
+        url('../assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src:
+        url('../assets/fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('../assets/fonts/PlayfairDisplay-Italic.woff') format('woff'),
+        url('../assets/fonts/PlayfairDisplay-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+:root {
+    /* Light */
+    --colorPrimary: #581825;
+    --colorSecondary: #c5a880;
+    --colorTertiary: #1A1A1A;
+    --colorFourty: #f5f3ef;
+    --colorNeutral: #FBF9F5;
+
+    /* Dark */
+    --colorDarkPrimary: #8C2A3E;
+    --colorDarkSecondary: #D6D1C9;
+    --colorDarkTertiary: #E07A8B;
+    --colorDarkNeutral: #121110;
+
+    /* Fonts Weight */
+    --fontRegular: 400;
+    --fontMedium: 500;
+    --fontBold: 700;
+    /* Fonts Family */
+    --fontPrimary: "DM Sans", sans-serif;
+    --fontSecondary: "Playfair Display", serif;
+}
