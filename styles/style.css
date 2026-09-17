@@ -34,6 +34,14 @@ img:hover {
     transition: 0.5s ease-in-out;
 }
 
+svg {
+    width: 36px;
+}
+
+.dark-mode svg path {
+    stroke: var(--colorSecondary);
+}
+
 .header {
     position: relative;
     background-color: var(--colorNeutral);
@@ -79,6 +87,10 @@ img:hover {
     height: 2px;
     background-color: var(--colorPrimary);
     transition: 0.5s ease-in-out;
+}
+
+.dark-mode .header__nav__bar span {
+    background-color: var(--colorSecondary);
 }
 
 .header__nav__bar span:nth-child(2) {
@@ -597,6 +609,7 @@ img:hover {
 
 .dark-mode .section__tertiary__form__content input {
     background-color: #1a1817;
+    color: #fff;
 }
 
 .button__primary {

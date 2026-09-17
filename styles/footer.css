@@ -120,6 +120,14 @@
     color: var(--colorDarkSecondary);
 }
 
+.footer__content__list__socials svg {
+    width: 24px;
+}
+
+.dark-mode .footer__content__list__socials svg path {
+    fill: var(--colorSecondary);
+}
+
 @media screen and (max-width: 768px) {
     .footer__content {
         display: flex;
