@@ -25,6 +25,13 @@ a {
 
 img {
     width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
 }
 
 .header {
@@ -126,6 +133,7 @@ img {
     background-color: transparent;
     border: none;
     padding: 0;
+    cursor: pointer;
 }
 
 .header__nav__content__button img {
@@ -289,6 +297,7 @@ img {
     background-color: #fff;
     border: 50px solid var(--colorFourty);
     padding: 40px 30px 10px 30px;
+    overflow: hidden;
 }
 
 .dark-mode .section__primary__image {
@@ -420,6 +429,10 @@ img {
     background-color: var(--colorSecondary);
 }
 
+.section__secondary__image {
+    overflow: hidden;
+}
+
 .section__secondary__image:last-child {
     margin-top: 40px;
 }
@@ -487,6 +500,11 @@ img {
 .section__tertiary__form__content label {
     color: var(--colorTertiary);
     font-size: 12px;
+    opacity: .75;
+}
+
+.dark-mode .section__tertiary__form__content label {
+    color: #fff;
     opacity: .75;
 }
 
