@@ -119,3 +119,11 @@
 .dark-mode .footer__content__copyright__span {
     color: var(--colorDarkSecondary);
 }
+
+@media screen and (max-width: 768px) {
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}

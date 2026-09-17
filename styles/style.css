@@ -35,6 +35,7 @@ img:hover {
 }
 
 .header {
+    position: relative;
     background-color: var(--colorNeutral);
     padding: 0 32px;
     border-bottom: 1px solid rgba(197, 168, 128, .25);
@@ -46,15 +47,72 @@ img:hover {
 
 .header__nav {
     display: flex;
+    column-gap: 10px;
     align-items: center;
     justify-content: space-between;
 }
 
 .header__nav__logo {
     font-family: var(--fontSecondary);
-    /* Cambiado a serif como fallback */
     font-size: 28px;
     color: var(--colorPrimary);
+}
+
+.header__nav__bar {
+    position: relative;
+    display: flex;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: 32px;
+    height: 22px;
+    display: none
+}
+
+
+.header__nav__bar span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--colorPrimary);
+    transition: 0.5s ease-in-out;
+}
+
+.header__nav__bar span:nth-child(2) {
+    top: 10px;
+    rotate: 45deg;
+    transform: scale(1.25);
+    opacity: 0;
+}
+
+.header__nav__bar span:nth-child(3) {
+    top: 10px;
+}
+
+.header__nav__bar span:nth-child(4) {
+    top: 10px;
+    rotate: -45deg;
+    transform: scale(1.25);
+    opacity: 0;
+}
+
+.header__nav__bar span:nth-child(5) {
+    top: 20px;
+}
+
+.header__nav__bar.active span {
+    opacity: 0;
+}
+
+.header__nav__bar.active span:nth-child(2) {
+    opacity: 1;
+}
+
+.header__nav__bar.active span:nth-child(4) {
+    opacity: 1;
 }
 
 .dark-mode .header__nav__logo {
@@ -67,7 +125,29 @@ img:hover {
     column-gap: 10px;
 }
 
+.header__nav__list__content.active {
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .header__nav__bar {
+        display: block;
+    }
+
+    .header__nav__list__content {
+        position: absolute;
+        margin: 0;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        transition: 0.5s ease-in-out;
+        opacity: 0;
+    }
+}
+
 .header__nav__list {
+    text-align: center;
     padding: 10px 15px;
 }
 
@@ -179,6 +259,8 @@ img:hover {
     background-color: var(--colorNeutral);
     padding: 80px 32px 128px 32px;
 }
+
+
 
 .dark-mode .section__primary {
     background-color: var(--colorDarkNeutral);
@@ -564,6 +646,21 @@ img:hover {
 .button__secondary:hover::after {
     width: 100%;
     transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+
+    .section__primary,
+    .section__secondary {
+        flex-direction: column;
+    }
+
+    .section__tertiary__form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 1024px) {
