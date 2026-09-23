@@ -47,14 +47,14 @@
 :root {
     /* Light */
     --colorPrimary: #581825;
-    --colorSecondary: #c5a880;
+    --colorSecondary: #D6AA65;
     --colorTertiary: #1A1A1A;
     --colorFourty: #f5f3ef;
     --colorNeutral: #FBF9F5;
 
     /* Dark */
     --colorDarkPrimary: #8C2A3E;
-    --colorDarkSecondary: #D6D1C9;
+    --colorDarkSecondary: #A8A29E;
     --colorDarkTertiary: #E07A8B;
     --colorDarkNeutral: #121110;
 

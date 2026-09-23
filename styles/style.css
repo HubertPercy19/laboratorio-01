@@ -1,5 +1,7 @@
 @import url('variables.css');
+@import url('cards.css');
 @import url('footer.css');
+
 
 body {
     font-family: var(--fontPrimary);
@@ -25,6 +27,7 @@ a {
 
 img {
     width: 100%;
+    max-width: 100%;
     transition: 0.5s ease-in-out;
 }
 
@@ -541,11 +544,61 @@ svg {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 64px 0;
+    padding: 64px 16px;
     background-color: var(--colorNeutral);
 }
 
+.section__tertiary__content__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-top: 1px solid #D9C1C2;
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+
+.section__tertiary__cards {
+    padding: 16px 16px 36px;
+    background-color: #F5F3EF;
+}
+
+.section__tertiary__cards__span {
+    color: #725B38;
+    font-size: 10px;
+}
+
+.section__tertiary__cards__title {
+    font-family: var(--fontSecondary);
+    font-weight: var(--fontRegular);
+    color: #3C0311;
+    margin: 0.5rem 0;
+}
+
+.section__tertiary__cards__paragraph {
+    color: #534344;
+    font-size: 12px;
+    margin: 0.5rem 0;
+}
+
+.dark-mode .section__tertiary__cards__title {
+    color: var(--colorFourty);
+}
+
+.dark-mode .section__tertiary__cards__span {
+    color: var(--colorSecondary);
+}
+
+.dark-mode .section__tertiary__cards {
+    background-color: #181715;
+    border: 1px solid #2A2724;
+}
+
+.dark-mode .section__tertiary__cards__paragraph {
+    color: var(--colorDarkSecondary);
+}
+
 .dark-mode .section__tertiary {
+
     background-color: #121110;
 }
 
@@ -599,6 +652,7 @@ svg {
 .section__tertiary__form__content label {
     color: var(--colorTertiary);
     font-size: 12px;
+    margin-bottom: 0.25rem;
     opacity: .75;
 }
 
@@ -703,6 +757,12 @@ svg {
         max-width: 970px;
         margin: 0 auto;
     }
+
+    .section__tertiary__content__cards {
+        flex-direction: row;
+        max-width: 80%;
+    }
+
 }
 
 @media screen and (min-width: 1280px) {
