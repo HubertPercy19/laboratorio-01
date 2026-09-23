@@ -155,6 +155,8 @@ svg {
         width: 100%;
         transition: 0.5s ease-in-out;
         opacity: 0;
+        background-color: var(--colorNeutral);
+        z-index: 10;
     }
 }
 
@@ -350,6 +352,9 @@ svg {
     column-gap: 60px;
 }
 
+.section__primary__information__list ul {
+    flex-grow: 1;
+}
 
 .section__primary__information__list__title {
     font-weight: var(--fontMedium);
@@ -662,10 +667,27 @@ svg {
 }
 
 @media screen and (max-width: 768px) {
+    .header {
+        padding: 0 16px;
+    }
+
+    .section__secondary__image img {
+        max-height: 450px;
+        object-fit: contain;
+    }
+
+    .section__primary__information__list {
+        column-gap: 24px;
+    }
+
+    .section__primary__information__list__number {
+        font-size: 16px;
+    }
 
     .section__primary,
     .section__secondary {
         flex-direction: column;
+        padding: 40px 16px;
     }
 
     .section__tertiary__form {
